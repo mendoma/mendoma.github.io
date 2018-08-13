@@ -37,9 +37,17 @@ h1, h2  {
     text-align: center;
 }
 
+#vertical-separator {
+    border-left: groove 1px;
+    border-right: groove 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
 #items   {
     display: flex;
     padding-right: 5px;
+    padding-bottom: 20px;
     flex-basis: 200px;
     justify-content: space-around;
 
@@ -51,23 +59,28 @@ h1, h2  {
 }
 
 a   {
-    color: #4aaaa5;
+    width: 50px;
+    color: #777777;
     text-decoration: none;
 }
 
 a:hover {
-    color: #777777;
+    color: #4aaaa5;
 }
 
 hr  {
-    width: 940px;
+    width: 920px;
     margin: auto;
+    border: 0;
+    color: #dddddd; 
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 .content    {
     flex: 1 0 auto;
-    padding: 20px;
-    max-width: 960px;
+    padding: 0px 20px 30px 20px;
+    max-width: 920px;
     margin: 20px auto;
     background-color: #ffffff;
     border: 1px solid #dddddd;
@@ -79,27 +92,25 @@ hr  {
     flex: 1 0 auto;
 }
 
-.title-container    {
-    display: flex;
-}
-
 #title  {
     flex-basis: 325px;
     align-self: flex-end;
     color: #4aaaa5;
-    padding-left: 25px;
-}
-
-hr  {
-    margin-bottom: 20px;
 }
 
 #about-img  {
     float: left;
     margin-right: 15px;
+    margin-top: 30px;
+}
+
+#my-image   {
+    height: 250px;
+    width: 200px;
 }
 
 #body-content   {
+    margin-top: 30px;
 }
 
 p   {
@@ -113,6 +124,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    
     background: #666666;
     border-top: #4aaaa5 10px solid;
 }
@@ -128,37 +140,72 @@ footer {
     padding-left: 10px;
 }
 
-form    {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 350px; 
+#contact-content    {
+    width: inherit;
 }
 
-form div    {
+form    {
+
+    height: fit-content; 
+}
+
+.form-item    {
     display: flex;
     flex-direction: column;
+    padding-bottom: 20px;
+}
+
+label   {
+    padding-bottom: 5px;
 }
 
 #portfolio-body {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
-    justify-content: space-around;
-    width: 500px;
+    width: 600px;
 }
 
 img    {
-    height: 200px;
-    width: 200px;
+    height: 175px;
+    width: 250px;
 }
 
 .img    {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    position: relative;
+    padding-top: 30px;
+    padding-right: 30px;
+    height: 175px;
+    width: 250px;
 }
 
-.img .item   {
-    background-color: #4aaaa5;
+.img-text   {
+    position: absolute;
+    bottom: 15px;
     text-align: center;
+    width: inherit;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #4aaaa5;
+    color: white;
+}
+
+form    {
+    margin-top: 30px;
+}
+
+#form-submit    {
+    background-color: #4aaaa5;
+    color: white;
+    width: 100px;
+}
+
+input, textarea   {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#copyright  {
+    height: 10px;
+    widows: 10px;
+    padding-left: 0px;
 }
