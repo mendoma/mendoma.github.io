@@ -11,42 +11,46 @@
     <title>Contact Me</title>
 </head>
 <body>
-    <div class="ui menu inverted">
-        <div class="ui container">
-            <h1 class="ui header item" id="title-name">Manny Mendoza</h1>
-            <div class="right menu">
-                <a class="item" href="index.html">Home</a>
-                <a class="item" href="portfolio.html">Portfolio</a>
-                <a class="item ui active" href="contact.html">Contact</a>
+    <div class="wrapper">
+        <div class="ui menu stackable inverted">
+            <div class="ui container">
+                <h1 class="ui header item" id="title-name">Manny Mendoza</h1>
+                <div class="right menu">
+                    <a class="item" href="index.html">Home</a>
+                    <a class="item" href="portfolio.html">Portfolio</a>
+                    <a class="item ui active" href="contact.html">Contact</a>
+                </div>
             </div>
         </div>
+        <div class="ui container">
+            <h2 class="ui dividing header">Contact Me</h2>
+            <form class="ui form">
+                <div class="field">
+                    <label>First Name</label>
+                    <input type="text" name="first-name" placeholder="First Name">
+                </div>
+                <div class="field">
+                    <label>Last Name</label>
+                    <input type="text" name="last-name" placeholder="Last Name">
+                </div>
+                <div class="field">
+                    <label>E-mail</label>
+                    <input type="email" name="email" placeholder="name@email.com">
+                </div>
+                <div class="field">
+                    <label>Message</label>
+                    <textarea placeholder="Enter a brief message"></textarea>
+                </div>
+                <div class="ui submit button">Submit</div>
+            </form>
+        </div>
     </div>
-    <div class="ui container">
-        <h2 class="ui dividing header">Contact Me</h2>
-        <form class="ui form">
-            <div class="field">
-                <label>First Name</label>
-                <input type="text" name="first-name" placeholder="First Name">
-            </div>
-            <div class="field">
-                <label>Last Name</label>
-                <input type="text" name="last-name" placeholder="Last Name">
-            </div>
-            <div class="field">
-                <label>E-mail</label>
-                <input type="email" name="email" placeholder="name@email.com">
-            </div>
-            <div class="field">
-                <label>Enter a brief message</label>
-                <textarea></textarea>
-            </div>
-            <div class="ui submit button">Submit</div>
-        </form>
-    </div>
+
     <div class="footer">
-        <!-- Copyright © Manny Mendoza 2018 -->
+        <span id="footer-text">Copyright © Manny Mendoza 2018</span>
     </div>
 
     <script src="semantic/dist/semantic.min.js"></script>
+    <script src="assets/javascripts/app.js"></script>
 </body>
 </html>
