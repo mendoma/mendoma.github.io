@@ -395,7 +395,7 @@
 /* Completed */
 .ui.steps .step.completed > .icon:before,
 .ui.ordered.steps .step.completed:before {
-  color: #21BA45;
+  color: #3D9400;
 }
 
 /* Disabled */
@@ -583,7 +583,7 @@
 }
 .ui.steps .step,
 .ui.step {
-  font-size: 1rem;
+  font-size: 13px;
 }
 .ui.large.steps .step,
 .ui.large.step {

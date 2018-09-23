@@ -246,7 +246,7 @@ img.ui.bordered.image {
 .ui.medium.image {
   width: 300px;
   height: auto;
-  font-size: 1rem;
+  font-size: 13px;
 }
 .ui.large.images .image,
 .ui.large.images img,
