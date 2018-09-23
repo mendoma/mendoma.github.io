@@ -4,7 +4,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+a   {
+    color: inherit;
+    font-size: 1.3em;
 }
 
 .wrapper {
@@ -15,6 +19,10 @@ body {
     text-align: center;
 }
 
+#title-name {
+    padding-left: 0px;
+}
+
 #footer-text {
-    font-size: 1.1em;
+    font-size: 1.2em;
 }

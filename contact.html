@@ -22,24 +22,24 @@
                 </div>
             </div>
         </div>
-        <div class="ui container">
+        <div class="ui container segment">
             <h2 class="ui dividing header">Contact Me</h2>
             <form class="ui form">
                 <div class="field">
                     <label>First Name</label>
-                    <input type="text" name="first-name" placeholder="First Name">
+                    <input type="text" name="first-name" placeholder="First Name" required>
                 </div>
                 <div class="field">
                     <label>Last Name</label>
-                    <input type="text" name="last-name" placeholder="Last Name">
+                    <input type="text" name="last-name" placeholder="Last Name" required>
                 </div>
                 <div class="field">
                     <label>E-mail</label>
-                    <input type="email" name="email" placeholder="name@email.com">
+                    <input type="email" name="email" placeholder="name@email.com" required>
                 </div>
                 <div class="field">
                     <label>Message</label>
-                    <textarea placeholder="Enter a brief message"></textarea>
+                    <textarea placeholder="Enter a brief message" required></textarea>
                 </div>
                 <div class="ui submit button">Submit</div>
             </form>
@@ -47,7 +47,15 @@
     </div>
 
     <div class="footer">
-        <span id="footer-text">Copyright © Manny Mendoza 2018</span>
+        <span id="footer-text">
+            <a href="https://github.com/mendoma" target="_blank">
+                <i class="github icon"></i>
+            </a>
+            Copyright © Manny Mendoza 2018&nbsp;
+            <a href="https://www.linkedin.com/in/manny-mendoza-0259a628/" target="_blank">
+                <i class="linkedin icon"></i>
+            </a>
+        </span>
     </div>
 
     <script src="semantic/dist/semantic.min.js"></script>
