@@ -1,170 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
     <title>My Portfolio</title>
 </head>
+
 <body>
     <div class="wrapper">
-        <div class="ui menu stackable inverted">
-            <div class="ui container">
-                <h1 class="ui header item" id="title-name">Manny Mendoza</h1>
-                <div class="right menu">
-                    <a class="item" href="index.html">Home</a>
-                    <a class="item ui active" href="portfolio.html">Portfolio</a>
-                    <a class="item" href="contact.html">Contact</a>
+
+        <div class="navbar-fixed">
+            <nav class="grey darken-3">
+                <div class="nav-wrapper container">
+                    <a href="#!" class="brand-logo">Manny Mendoza</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
                 </div>
-            </div>
+            </nav>
         </div>
 
-        <div class="ui container segment">
-            <h2 class="ui dividing header">Portfolio</h2>
-            <div class="ui special three cards stackable">
-                <div class="card">
-                    <div class="blurring dimmable image">
-                        <div class="ui dimmer">
-                            <div class="content">
-                                <div class="center">
-                                    <a href="https://mendoma.github.io/Hangman/" target="_blank">
-                                        <div class="ui inverted button">Visit Page</div>
-                                    </a>
-                                </div>
-                            </div>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="container">
+            <h5>Portfolio</h5>
+
+            <div class="divider"></div>
+
+            <div class="row section">
+
+                <div class="col s12 m6 l4">
+                    <div class="card small hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/hangman.PNG">
                         </div>
-                        <img class="ui image" src="assets/images/hangman.PNG">
-                    </div>
-                    <div class="content">
-                        <a class="header center aligned" href="https://mendoma.github.io/Hangman/" target="_blank">Hangman</a>
-                        <div class="meta">
-                            <!-- <span class="date">Created 2018</span> -->
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Hangman Game<i class="material-icons right">more_vert</i></span>
+                            <p><a href="https://mendoma.github.io/Hangman/" target="_blank">Play Game</a></p>
                         </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="blurring dimmable image">
-                        <div class="ui dimmer">
-                            <div class="content">
-                                <div class="center">
-                                    <a href="https://mendoma.github.io/StarWars-Game/" target="_blank">
-                                        <div class="ui inverted button">Visit Page</div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <img class="ui image" src="assets/images/star-wars.PNG">
-                    </div>
-                    <div class="content">
-                        <a class="header center aligned" href="https://mendoma.github.io/StarWars-Game/" target="_blank">Star Wars Game</a>
-                        <div class="meta">
-                            <!-- <span class="date">Created 2018</span> -->
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Hangman Game<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="blurring dimmable image">
-                        <div class="ui dimmer">
-                            <div class="content">
-                                <div class="center">
-                                    <a href="https://mendoma.github.io/TriviaGame/" target="_blank">
-                                        <div class="ui inverted button">Visit Page</div>
-                                    </a>
-                                </div>
-                            </div>
+
+                <div class="col s12 m6 l4">
+                    <div class="card small hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/star-wars.PNG">
                         </div>
-                        <img class="ui image" src="assets/images/trivia-game.PNG">
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Star Wars Game<i class="material-icons right">more_vert</i></span>
+                            <p><a href="https://mendoma.github.io/StarWars-Game/" target="_blank">Play Game</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Star Wars Game<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
                     </div>
-                    <div class="content">
-                        <a class="header center aligned" href="https://mendoma.github.io/TriviaGame/" target="_blank">Trivia Game</a>
-                        <div class="meta">
-                            <!-- <span class="date">Created 2018</span> -->
+                </div>
+
+                <div class="col s12 m6 l4">
+                    <div class="card small hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/trivia-game.PNG">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Trivia Game<i class="material-icons right">more_vert</i></span>
+                            <p><a href="https://mendoma.github.io/TriviaGame/" target="_blank">Play Game</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Trivia Game<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col s12 m6 l4">
+                    <div class="card small hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/route-app.PNG">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Route App<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#" target="_blank">View App</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Route App<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="col s12 m6 l4">
+                    <div class="card small hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/giftastic.PNG">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">GifTastic<i class="material-icons right">more_vert</i></span>
+                            <p><a href="https://mendoma.github.io/GifTastic/" target="_blank">Play Game</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">GifTastic<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l4">
+                    <div class="card small hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/rockPaperScissors.PNG">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Rock Paper Scissors<i class="material-icons right">more_vert</i></span>
+                            <p><a href="https://mendoma.github.io/RockPaperScissors/" target="_blank">Play Game</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Rock Paper Scissors<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l4">
+                    <div class="card small hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/train-schedule.PNG">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Train Schedule<i class="material-icons right">more_vert</i></span>
+                            <p><a href="https://mendoma.github.io/TrainSchedule/" target="_blank">View App</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Train Schedule<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="ui special three cards stackable">
-                <div class="card">
-                    <div class="blurring dimmable image">
-                        <div class="ui dimmer">
-                            <div class="content">
-                                <div class="center">
-                                    <a href="#" target="_blank">
-                                        <div class="ui inverted button">Visit Page</div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <img class="ui image" src="assets/images/route-app.PNG">
-                    </div>
-                    <div class="content">
-                        <a class="header center aligned" href="#" target="_blank">Route App</a>
-                        <div class="meta">
-                            <!-- <span class="date">Created 2018</span> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="blurring dimmable image">
-                        <div class="ui dimmer">
-                            <div class="content">
-                                <div class="center">
-                                    <a href="https://mendoma.github.io/GifTastic/" target="_blank">
-                                        <div class="ui inverted button">Visit Page</div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <img class="ui image" src="assets/images/giftastic.PNG">
-                    </div>
-                    <div class="content">
-                        <a class="header center aligned" href="https://mendoma.github.io/GifTastic/" target="_blank">GifTastic</a>
-                        <div class="meta">
-                            <!-- <span class="date">Created 2018</span> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="blurring dimmable image">
-                        <div class="ui dimmer">
-                            <div class="content">
-                                <div class="center">
-                                    <a href="https://mendoma.github.io/RockPaperScissors/" target="_blank">
-                                        <div class="ui inverted button">Visit Page</div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <img class="ui image" src="assets/images/rockPaperScissors.PNG">
-                    </div>
-                    <div class="content">
-                        <a class="header center aligned" href="https://mendoma.github.io/RockPaperScissors/" target="_blank">Rock Paper Scissors</a>
-                        <div class="meta">
-                            <!-- <span class="date">Created 2018</span> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 
-    <div class="footer">
-        <span id="footer-text">
-            <a href="https://github.com/mendoma" target="_blank">
-                <i class="github icon"></i>
-            </a>
-            Copyright © Manny Mendoza 2018&nbsp;
-            <a href="https://www.linkedin.com/in/manny-mendoza-0259a628/" target="_blank">
-                <i class="linkedin icon"></i>
-            </a>
-        </span>
-    </div>
+    <footer>
+        <div class="footer-copyright">
+            <div class="container">
+                Copyright © 2018 Manny Mendoza
+                <a class="right" href="https://github.com/mendoma" target="_blank"><i class="fab fa-github"></i></a>
+                <a class="right" href="https://www.linkedin.com/in/manny-mendoza-0259a628/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
 
-    <script src="semantic/dist/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="assets/javascripts/app.js"></script>
 </body>
+
 </html>
