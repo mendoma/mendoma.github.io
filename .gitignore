@@ -1,8 +1,2 @@
-.vscode/*
-node_modules/*
-semantic/*
-semantic/dist/*
-semantic/src/*
-semantic/tasks/*
-semantic.json
-package-lock.json
+node_modules
+semantic
