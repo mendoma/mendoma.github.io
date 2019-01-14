@@ -1,0 +1,79 @@
+[
+	{
+		"id": 0,
+		"app": "News Scraper",
+		"link": "https://newsscraperucsd1.herokuapp.com/",
+		"code": "https://github.com/mendoma/newsScraper",
+		"image": "../assets/images/news-scraper.PNG"
+	},
+	{
+		"id": 1,
+		"app": "Chrome Designs",
+		"link": "https://chromedesigns760.herokuapp.com/",
+		"code": "#",
+		"image": "../assets/images/chrome-designs.PNG"
+	},
+	{
+		"id": 2,
+		"app": "Hangman Game",
+		"link": "https://mendoma.github.io/Hangman/",
+		"code": "https://github.com/mendoma/Hangman",
+		"image": "../assets/images/hangman.PNG"
+	},
+	{
+		"id": 3,
+		"app": "Codebusters",
+		"link": "https://codebustersucsd.herokuapp.com/",
+		"code": "https://github.com/mendoma/codebusters",
+		"image": "../assets/images/code-busters.PNG"
+	},
+	{
+		"id": 4,
+		"app": "Star Wars Game",
+		"link": "https://mendoma.github.io/StarWars-Game/",
+		"code": "https://github.com/mendoma/StarWars-Game",
+		"image": "../assets/images/star-wars.PNG"
+	},
+	{
+		"id": 5,
+		"app": "Trivia Game",
+		"link": "https://mendoma.github.io/TriviaGame/",
+		"code": "https://github.com/mendoma/TriviaGame",
+		"image": "../assets/images/trivia-game.PNG"
+	},
+	{
+		"id": 6,
+		"app": "GifTastic",
+		"link": "https://mendoma.github.io/GifTastic/",
+		"code": "https://github.com/mendoma/GifTastic",
+		"image": "../assets/images/giftastic.PNG"
+	},
+	{
+		"id": 7,
+		"app": "Rock Paper Scissors Game",
+		"link": "https://mendoma.github.io/RockPaperScissors/",
+		"code": "https://github.com/mendoma/RockPaperScissors",
+		"image": "../assets/images/rockPaperScissors.PNG"
+	},
+	{
+		"id": 8,
+		"app": "Train Schedule",
+		"link": "https://mendoma.github.io/TrainSchedule/",
+		"code": "https://github.com/mendoma/TrainSchedule",
+		"image": "../assets/images/train-schedule.PNG"
+	},
+	{
+		"id": 9,
+		"app": "Eat-A-Burger",
+		"link": "http://burgerappucsd.herokuapp.com/",
+		"code": "https://github.com/mendoma/burger-app",
+		"image": "../assets/images/burgerApp.PNG"
+	},
+	{
+		"id": 10,
+		"app": "Clicky Game",
+		"link": "https://mendoma.github.io/clicky-game/",
+		"code": "https://github.com/mendoma/clicky-game",
+		"image": "../assets/images/clicky-game.PNG"
+	}
+]
