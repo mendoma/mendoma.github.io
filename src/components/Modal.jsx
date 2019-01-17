@@ -11,7 +11,7 @@ const Modal = props => {
 			<div className="modal-footer">
 				<div className="left">
 					<a href={props.project.link} rel="noopener noreferrer" target="_blank" id="deployed-site" className="waves-effect waves-light btn hoverable blue darken-3">
-						<i className="fas fa-globe"></i>&nbsp;
+						<i class="fas fa-globe"></i>&nbsp;
 						Visit Site
 					</a>
 					<a href={props.project.code} rel="noopener noreferrer" target="_blank" id="view-code" className="waves-effect waves-light btn hoverable blue darken-3">
