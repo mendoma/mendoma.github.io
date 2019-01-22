@@ -10,30 +10,15 @@ import Error from './components/Error'
 import Sidenav from './components/Sidenav'
 
 class App extends Component {
-	state = {
-		activeItem: null
-	}
-
-	handleItemClick = ({ name }) => {
-		console.log('name', name)
-		this.setState({
-			activeItem: name
-		})
-	}
-
 	componentDidMount() {
 		var modal = document.querySelectorAll('.modal')
 		var modal_component = M.Modal.init(modal, { dismissible: false })
 	}
-
 	render() {
 		return (
 			<BrowserRouter>
 				<div className="main">
-					<Sidenav
-						handleItemClick={this.handleItemClick}
-						activeItem={this.state.activeItem}
-					/>
+					<Sidenav />
 					<Switch>
 						<Route path="/" component={Home} exact />
 						<Route path="/about" component={About} />

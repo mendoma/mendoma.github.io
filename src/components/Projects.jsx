@@ -7,11 +7,9 @@ class Projects extends Component {
 	state = {
 		selectedProject: {}
 	}
-
 	openModal = currentProject => {
 		this.setState({ selectedProject: currentProject })
 	}
-
 	render() {
 		return (
 			<div className="container">
@@ -19,10 +17,7 @@ class Projects extends Component {
 				<div className="divider" />
 				<Modal project={this.state.selectedProject} />
 				<div className="row section">
-					<Card
-						projects={apps}
-						openModal={this.openModal}
-					/>
+					<Card projects={apps} openModal={this.openModal} />
 				</div>
 			</div>
 		)

@@ -1,8 +1,9 @@
 {
-  "name": "my-profile",
-  "version": "0.1.0",
+  "name": "profile",
+  "version": "1.0.0",
+  "description": "My Profile Page",
+  "main": "index.js",
   "private": true,
-  "homepage": "https://mendoma.github.io/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "materialize-css": "^1.0.0-rc.2",
@@ -14,7 +15,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -23,6 +24,16 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mendoma/profile.git"
+  },
+  "author": "Manny Mendoza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mendoma/profile/issues"
+  },
+  "homepage": "https://mendoma.github.io/profile/",
   "browserslist": [
     ">0.2%",
     "not dead",
