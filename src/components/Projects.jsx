@@ -19,10 +19,7 @@ class Projects extends Component {
 				<div className="divider" />
 				<Modal project={this.state.selectedProject} />
 				<div className="row section">
-					<Card
-						projects={apps}
-						openModal={this.openModal}
-					/>
+					<Card projects={apps} openModal={this.openModal} />
 				</div>
 			</div>
 		)

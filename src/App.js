@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { HashRouter, Route, Switch } from 'react-router-dom'
-import M from 'materialize-css/dist/js/materialize.min.js'
 import 'materialize-css/dist/css/materialize.min.css'
+import M from 'materialize-css/dist/js/materialize.min.js'
 import Home from './components/Home'
 import About from './components/About'
 import Projects from './components/Projects'
@@ -14,16 +14,16 @@ class App extends Component {
 		activeItem: null
 	}
 
-	handleItemClick = ({ name }) => {
-		console.log('name', name)
-		this.setState({
-			activeItem: name
-		})
+	componentDidMount() {
+		var elems = document.querySelectorAll('.sidenav')
+		var instances = M.Sidenav.init(elems)
 	}
 
-	componentDidMount() {
-		var modal = document.querySelectorAll('.modal')
-		var modal_component = M.Modal.init(modal, { dismissible: false })
+	handleItemClick = name => {
+		const nameClicked = name.target.text
+		this.setState({
+			activeItem: nameClicked
+		})
 	}
 
 	render() {

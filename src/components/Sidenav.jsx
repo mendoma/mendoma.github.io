@@ -4,6 +4,9 @@ import { NavLink } from 'react-router-dom'
 const Sidenav = props => {
 	return (
 		<div>
+			<a href="#" data-target="mobile-demo" className="sidenav-trigger">
+				<i className="material-icons" id="menu">menu</i>
+			</a>
 			<ul className="sidenav sidenav-fixed z-depth-5 blue darken-3">
 				<div id="sidenavContent">
 					<div className="row center blue-grey darken-4" id="name">
@@ -53,9 +56,8 @@ const Sidenav = props => {
 						</div>
 					</div>
 					<li
-						name="home"
-						className={props.activeItem === 'home' ? 'active' : ''}
 						onClick={props.handleItemClick}
+						className={props.activeItem === 'Home' ? 'active' : ''}
 					>
 						<NavLink to="/">
 							<i className="fas fa-home fa-2x" />
@@ -64,8 +66,7 @@ const Sidenav = props => {
 					</li>
 					<li
 						onClick={props.handleItemClick}
-						className={props.activeItem === 'about' ? 'active' : ''}
-						name="about"
+						className={props.activeItem === 'About' ? 'active' : ''}
 					>
 						<NavLink to="about">
 							<i className="fas fa-user fa-2x" />
@@ -74,7 +75,7 @@ const Sidenav = props => {
 					</li>
 					<li
 						onClick={props.handleItemClick}
-						className={props.activeItem === 'projects' ? 'active' : ''}
+						className={props.activeItem === 'Projects' ? 'active' : ''}
 						name="projects"
 					>
 						<NavLink to="projects">
@@ -84,7 +85,7 @@ const Sidenav = props => {
 					</li>
 					<li
 						onClick={props.handleItemClick}
-						className={props.activeItem === 'contact' ? 'active' : ''}
+						className={props.activeItem === 'Contact' ? 'active' : ''}
 						name="contact"
 					>
 						<NavLink to="contact">
@@ -94,6 +95,46 @@ const Sidenav = props => {
 					</li>
 				</div>
 				<div className="footer center">Copyright © 2018 Manny Mendoza</div>
+			</ul>
+			<ul className="sidenav" id="mobile-demo">
+				<li
+					onClick={props.handleItemClick}
+					className={props.activeItem === 'Home' ? 'active' : ''}
+				>
+					<NavLink to="/">
+						<i className="fas fa-home fa-2x" />
+						Home
+					</NavLink>
+				</li>
+				<li
+					onClick={props.handleItemClick}
+					className={props.activeItem === 'About' ? 'active' : ''}
+				>
+					<NavLink to="about">
+						<i className="fas fa-user fa-2x" />
+						About
+					</NavLink>
+				</li>
+				<li
+					onClick={props.handleItemClick}
+					className={props.activeItem === 'Projects' ? 'active' : ''}
+					name="projects"
+				>
+					<NavLink to="projects">
+						<i className="fas fa-code fa-2x" />
+						Projects
+					</NavLink>
+				</li>
+				<li
+					onClick={props.handleItemClick}
+					className={props.activeItem === 'Contact' ? 'active' : ''}
+					name="contact"
+				>
+					<NavLink to="contact">
+						<i className="fas fa-envelope-open fa-2x" />
+						Contact
+					</NavLink>
+				</li>
 			</ul>
 		</div>
 	)

@@ -4,7 +4,7 @@ body {
 	min-height: 100vh;
 }
 
-.content {
+#root {
 	flex: 1 0 auto;
 }
 
@@ -22,16 +22,6 @@ a {
 	font-weight: bold;
 }
 
-@keyframes move {
-	0% {
-		background-position: 0 0;
-	}
-
-	50% {
-		background-position: 100% 0;
-	}
-}
-
 #home {
 	background-image: url(https://images.unsplash.com/photo-1528819622765-d6bcf132f793?ixlib=rb-1.2.1&w=1000&q=80);
 	background-size: cover;
@@ -40,22 +30,8 @@ a {
 	left: -20px;
 	right: -20px;
 	bottom: -20px;
-	filter: blur(15px);
+	filter: blur(7px);
 	z-index: -1;
-}
-
-#mask {
-	position: relative;
-	top: 200px;
-	margin: auto;
-	width: 215px;
-	height: 420px;
-	animation: move 50s infinite;
-	background-image: url(https://images.unsplash.com/photo-1528819622765-d6bcf132f793?ixlib=rb-1.2.1&w=1000&q=80);
-	background-size: cover;
-	-webkit-mask-image: url(./king_piece.png);
-	mask-image: url(./king_piece.png);
-	mask-size: cover;
 }
 
 #my-image {
@@ -67,7 +43,7 @@ a {
 
 #profilePic:hover {
 	filter: drop-shadow(8px 8px 10px black);
-    transform: scale(1.03);
+	transform: scale(1.03);
 }
 
 #profilePic {
@@ -78,7 +54,8 @@ a {
 	transition: all ease-in-out 0.2s;
 }
 
-#firstName, #lastName {
+#firstName,
+#lastName {
 	font-size: 1.6em;
 	color: white;
 }
@@ -105,7 +82,14 @@ iframe {
 	margin-right: 10px;
 }
 
+#menu {
+	display: none;
+}
+
 @media only screen and (max-width: 992px) {
+	#menu {
+		display: unset;
+	}
 	.main,
 	.footer,
 	.modal {
