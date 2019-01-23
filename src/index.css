@@ -8,8 +8,7 @@ body {
 	flex: 1 0 auto;
 }
 
-.main,
-.footer {
+.main {
 	padding-left: 300px;
 }
 
@@ -91,7 +90,6 @@ iframe {
 		display: unset;
 	}
 	.main,
-	.footer,
 	.modal {
 		padding-left: 0;
 	}

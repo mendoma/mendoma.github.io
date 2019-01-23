@@ -5,7 +5,9 @@ const Sidenav = props => {
 	return (
 		<div>
 			<a href="#" data-target="mobile-demo" className="sidenav-trigger">
-				<i className="material-icons" id="menu">menu</i>
+				<i className="material-icons" id="menu">
+					menu
+				</i>
 			</a>
 			<ul className="sidenav sidenav-fixed z-depth-5 blue darken-3">
 				<div id="sidenavContent">
@@ -94,7 +96,6 @@ const Sidenav = props => {
 						</NavLink>
 					</li>
 				</div>
-				<div className="footer center">Copyright © 2018 Manny Mendoza</div>
 			</ul>
 			<ul className="sidenav" id="mobile-demo">
 				<li
